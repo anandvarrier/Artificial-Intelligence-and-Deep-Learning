@@ -1,46 +1,54 @@
-DataBricks - Generative AI Course
-
+DataBricks - Generative AI Fundamental Course
+==================================
 
 Generative AI Basics
+--------------------
 Generative AI is a type of artificial intelligence technology that can produce various types of content, including text, imagery, audio and synthetic data. 
 
-The technology, it should be noted, is not brand-new. Generative AI was introduced in the 1960s in chatbots. But it was not until 2014, with the introduction of generative adversarial networks, or GANs -- a type of machine learning algorithm -- that generative AI could create convincingly authentic images, videos and audio of real people.
+It should be noted, Generative AI is not brand-new. Generative AI was introduced in the 1960s in chatbots. But it was not until 2014, with the introduction of generative adversarial networks, or GANs -- a type of machine learning algorithm -- that generative AI could create convincingly authentic images, videos and audio of real people.
 
 It unlocks the value of *your* data.
 
-LLM Model cesion criteria
-Privacy, Quality, Cost and Latency
+---
 
-If we want to implement our own modern LLM application the we need to consider 2 flavours of LLMs
+There are 4 criterias to consider before implementing an LLM based Application:
+1) Privacy
+2) Quality
+3) Cost
+4) Latency
 
-	a) Open-Source Models - eg. Meta AI Llama, Databricks, Mosaic MPT
-	b) Proprietary Models - eg.Anthrop\c, OpenAI, BARD, ChatGPT, PaLlm 	   2, etc
+There are 2 flavours of LLMs:
+	a) Open-Source Models - eg.Meta AI Llama, Databricks, Mosaic MPT
+	b) Proprietary Models - eg.Anthrop\c, OpenAI, BARD, ChatGPT, PaLlm 2, etc
 
 Proprietary Models
+------------------
 Pros:
 1) Speed of Development
 	+Quick to get started
 	+As this is an API, it will fit in existing pipelines
+
 2) Quality
-	+can offer state of the a results
+	+can offer state of the art results
 
 Cons:
 1) Cost
 	+pay for each token sent/received
 
 2) DataPrivacy/Security 
-	+ you may know how your data is being used
+	+ you may not know how your data is being used
 
 3) Vendor Lock-in
 	+ Suseptible to vendor outages, deprecated features,etc
 
 Open Source Models
+------------------
 Pros:
 1) Task-tailoring
-	select and/or fine tune a task specific model for your use case
+	+select and/or fine tune a task specific model for your use case
 
 2) Inference Cost
-	+more tailored models oftn smaller, making them faster at inference 	 time
+	+more tailored models often smaller, making them faster at inference 	 time
 
 3) Control
 	+all of the data and model information stays entirely within your 	 locus of control
@@ -55,38 +63,30 @@ Cons:
 3) Skill Sets
 	+ Require in-house expertise
 
+---
 
 Fine Tuned Models
+-----------------
+Defintion: The process of further training a pre-trained model on a specific dataset to adapt it for a particular application or domain is known as Fine tuning.
 In both the cases i.e Proprietary Models and Open Source Models, we get the option to fine tune models
 
-Defintion: The process of further training a pre-trained model on a specific dataset to adapt it for a particular application or domain.
-
-Here, a foundation models is fine tuned for a specific tasks or for domain adaptation using Supervised traing on a smaller labled datasets.
+Here, a foundation models is fine tuned for a specific tasks or for domain adaptation using Supervised training on a smaller labled datasets.
 For example: Task specific fine-tuned models:
-	     +Question-Asnwering
-	     +Sentiment Analysis
-	     +Named Entity Recognition
+	     	+Question-Asnwering
+	     	+Sentiment Analysis
+	     	+Named Entity Recognition
 
 For example: Domain specific fine-tuned models:
-	     + Science
-	     + Finance
-	     + Legal
+	     	+ Science
+	     	+ Finance
+	     	+ Legal
 
 In Many LLM based Applications, we may have multiple tasks. To execute each task we may need a mix of LLMs i.e foundational models or fine tuned models.
-To achieve mixed LLM workflow in LLM applications, there is a concept called Chains. Developer chain the LLMs into such applications. A famous tool used for the same is Langchain. 
+To achieve mixed LLM workflow in LLM applications, there is a concept called Chains. A developer, chains the LLMs into such applications. A famous tool used for the same is Langchain. 
 
-Additionally, it is important to utilize a vector database to store the state of the chain. A vector database facilitates an efficient storage and retreival mechanism of data which is generated during the chaining process. Vector Database assits in seamless coordination among
+Additionally, it is important to utilize a vector database to store the state of the chain. A vector database facilitates an efficient storage and retreival mechanism of the intermediate representation generated during the chaining process. Vector Database assits in seamless workflow management and model coordination.
 
-
-
-
-
-
-
-
-
-
-
+---
 
 Generative AI combine various AI algorithms to represent and process content. For example, to generate text, various natural language processing techniques transform raw characters (e.g., letters, punctuation and words) into sentences, parts of speech, entities and actions, which are represented as vectors using multiple encoding techniques. Similarly, images are transformed into various visual elements, also expressed as vectors. One caution is that these techniques can also encode the biases, racism, deception and puffery contained in the training data.
 
@@ -94,25 +94,81 @@ How does Generative AI work?
 How does generative AI work?
 Generative AI starts with a prompt that could be in the form of a text, an image, a video, a design, musical notes, or any input that the AI system can process. Various AI algorithms then return new content in response to the prompt. Content can include essays, solutions to problems, or realistic fakes created from pictures or audio of a person.
 
-
-
-
-
-LLMs and Generative AI
-
+---
 
 LLM Applications
+----------------
+
+There are a few Solutions for LLM Applications
+
+Deep Learning Models: Pytorch, Tensorflow, JAX
+Classical ML ALgorithms: Sklearn, XGBoost
+Proprietary LLMs: ChatGPT, Anthrop\c, OpenAI, PaLM 2
+Opensource Generative AI + LLMs: Mosaic MPT, Huggging face, Stability.ai
+Chains & agents: Langchain, haystack, txtai, jina
+ 
+Generative AI will disrupt every industry like Tech, Helathcare, Banking and FINS, Pharmaceuticals,etc
+
+---
+
+Risks and Challenges
+--------------------
+
+Generative AI brings new risks and challenges for business and society
+Legal issues:
+	+Privacy
+	+Security
+	+Intellectual property protection
+
+Ethical Issues
+	+Bias
+	+Misinformation
+
+Social/Enviornmental issues
+	+Impact on workforce
+	+Impact on the enviornment
+
+---
+
+Active Regulatory Area
+----------------------
+
+AI, is similar to other emerging technologies, is subject to both existing and newly proposed regulations. 
+A few examples of proposed AI regulations:
+	+ EU AI Act
+	+ US Algorithmic Accountibility Act 2022
+	+ Japan AI regulation approach 2023
+	+ Biden-Harris Responsible AI Actions 2023
+	+ California Regulation of Automated Decesion Tool
+
+---
+
+Fairness and Bias in Data
+-------------------------
+Big Data != Good data (Size doesn't guarantee quality)
 
 
-AI Adoption Preperation
+Annotated human bias in data collection and annotation:
+	+Models use annotated or fine tuned with human feedback
+	+This bias type reflects errors or limitations in human judgement and reasoning 
+	+Example: Sampling errir, Confirmation bias, Anecdotal fallacy
 
+---
 
-Legality
+Bias Reinforcement Loop
+------------------------
+A loop between biased input and output
 
+Training Data(Human bias in data) ---> AI Model Learns from Biased Data(Models learn biases present in the training data.)---> Model Generation Bias (Models generate toxic, biased or discriminatory outputs.)---> People Learn/Decide (People learn and use biased data. This is used as new data)
 
-Ethical Considerations
+---
 
+Reliability and Accuracy of AI Systems
+--------------------------------------
+LLMs tend to hallucinate
 
-Human-AI Interations
+Hallucination: Phenomenon when model generates outputs that are plausible-sounding but inaccurate ir nonsensical responses due to limitation in understanding
 
+Hallucination becomes dangerous when, Models become more convincingand people rely on them more. Models lead tp degradation of information quality.
 
+2 types of Hallucinations: Intrinsic and Extrinsic

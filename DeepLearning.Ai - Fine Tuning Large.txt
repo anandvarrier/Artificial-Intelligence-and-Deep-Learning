@@ -1,0 +1,62 @@
+DeepLearning.Ai - Fine Tuning Large Language Models Notes
+==========================================================
+
+What does finetuning do for a model?
+-Steers the model to more consistent output
+-Reduces halucinations
+-Customizes the model to a specific use case
+-Process is similar to the ealier training
+
+Prompt Engineering vs Fine Tuning
+-----------------------------------
+
+Note_ RAG-Retrival Augmented Generation
+
+Prompt Engineering
+Pros  
+-No data to be shared
+-Smaller upfront prompt
+-No technical knowledge needed
+-Connect data through retrevial
+
+Cons
+-Much less data fits in a prompt
+-Forgets data
+-RAG misses or gets incorrect data
+
+Fine Tuning
+Pros
+-Nearly unlimeted data fits
+-Learn new information
+-Correct incorrect information
+-Less cost afterwards if smaller model
+-Uses RAG too
+ 
+Cons
+-Better high-quality data
+-Upfront compute cost
+-Needs technical knowledge 
+
+Pretraining
+-Initailly the model does not know anything.It has no knowledge regarding the world or language learning capability.
+-The objective of any model is to predict the next token.
+-The model is then given a giant corpus of text data
+-Often scrapped from the internet: "unlabeled"
+-Then the model will go into self-supervised learning
+
+After Training
+-The model starts learning language
+-It starts to learn knowledge
+
+
+What is 'data-scrapped from the internet'?
+-Often not publicized how to pretrain
+-Open-source pretraining data: "The Pile"
+-Expensive & time-consuming to train
+
+Limitations of pretrained base models
+
+Pretraining gives us the Base Model. This model is not as reliable as a finetuned model.
+
+Pretrained i.e Base Model upon Finetuning gives is a FineTuned Model.
+

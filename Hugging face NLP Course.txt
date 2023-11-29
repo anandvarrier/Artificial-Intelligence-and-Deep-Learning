@@ -1,0 +1,45 @@
+Hugging face NLP Course
+======================
+
+#What is Hugging face?
+-> 
+
+#What can be done using Hugging face?
+->
+
+#What is NLP?
+->Natural Language Processing (NLP) is a field of linguistics and machine learning focused on understanding everything related to human language. The aim of NLP tasks is not only to understand single words individually, but to be able to understand the context of those words. 
+List of common NLP task:
+a) Classifying whole sentences
+b) Classifying each word in a sentence
+c) Generating text content
+d) Extracting an answer from a text
+e) Generating a new sentence from an input text
+
+NLP isn’t limited to written text though. It also tackles complex challenges in speech recognition and computer vision, such as generating a transcript of an audio sample or a description of an image.
+
+#What are transformers?
+-> Transformer models are used to solve all kinds of NLP tasks. The 🤗 Transformers library provides the functionality to create and use shared models.The most basic object in the 🤗 Transformers library is the pipeline() function. It connects a model with its necessary preprocessing and postprocessing steps, allowing us to directly input any text and get an intelligible answer. For example opne link: https://huggingface.co/learn/nlp-course/chapter1/3?fw=pt
+
+By default, this pipeline selects a particular pretrained model that has been fine-tuned for sentiment analysis in English. The model is downloaded and cached when you create the classifier object. If you rerun the command, the cached model will be used instead and there is no need to download the model again.
+
+3 main steps involved when you pass some text to a pipeline:
+
+The text is preprocessed into a format the model can understand.
+The preprocessed inputs are passed to the model.
+The predictions of the model are post-processed, so you can make sense of them.
+
+#What are the different types of available pipelines?
+-> The following is a list of pipelines in hugging face for NLP tasks:
+feature-extraction (get the vector representation of a text)
+fill-mask
+ner (named entity recognition)
+question-answering
+sentiment-analysis
+summarization
+text-generation
+translation
+zero-shot-classification
+
+#What is Zero-shot Classification?
+-> We use Zero-shot classification pipeline when we have to classify words which hasn't been lablled. This is mainly used in real-world scenarios. Annotating text is usually time-consuming and requires domain expertise. For this use case, the zero-shot-classification pipeline is very powerful: it allows you to specify which labels to use for the classification, so you don’t have to rely on the labels of the pretrained model.This pipeline is called zero-shot because you don’t need to fine-tune the model on your data to use it. It can directly return probability scores for any list of labels you want!

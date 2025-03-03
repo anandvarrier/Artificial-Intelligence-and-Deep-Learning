@@ -1,0 +1,16 @@
+ETL Pipeline for Operational Data (SQL + Python + Power BI)
+
+Observation from the dataset:
+
+17 fields are present in the dataset.
+Invoice Id seems unique id.
+There are 3 branches: A,B,C.
+There are 3 cities: Yangon, Naypyitaw, Mandal.
+There are atleast 1 or more branch in each city. 
+There are 2 genders: Male and Female.
+There are 6 product lines: Health and beauty, Electronic accessories, Home and Lifestyle, Sports and Travel, Food and Beverages and Fashion accessories.
+There 2 types of Customers: Member and Normal
+There are  3 types of payment options: Ewallet, Cash, Credit card
+There are 9 columns which has only numerical/float values.
+
+
